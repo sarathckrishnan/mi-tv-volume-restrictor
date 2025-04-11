@@ -27,7 +27,8 @@ jobs:
         run: ./gradlew assembleRelease
 
       - name: Upload release APK
-        uses: actions/upload-artifact@3fdbbe7db44f936b1c68a46f1b6b5e40876a8ac4
+        uses: actions/upload-artifact@v3
         with:
           name: volume-restrictor-apk
           path: app/build/outputs/apk/release/app-release.apk
+      
